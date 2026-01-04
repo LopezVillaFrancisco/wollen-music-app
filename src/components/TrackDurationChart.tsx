@@ -9,13 +9,12 @@ interface TrackDurationChartProps {
 }
 
 export const TrackDurationChart = ({ tracks, title = 'Duración de Tracks' }: TrackDurationChartProps) => {
-  // Preparar datos para el gráfico - tomar hasta 15 tracks
   const chartData = tracks
     .filter(t => t.duration && t.duration > 0)
-    .slice(0, 15)
+    .slice(0, 10)
     .map(track => ({
       name: track.name.length > 20 ? track.name.substring(0, 20) + '...' : track.name,
-      duration: Math.floor(track.duration / 60), // Convertir a minutos
+      duration: Math.floor(track.duration / 60), 
       durationFormatted: formatDuration(track.duration),
       fullName: track.name,
     }));

@@ -45,7 +45,7 @@ export const TracksView = () => {
           <>
             <TrackDurationChart 
               tracks={globalTopTracks} 
-              title="Duración de Top 15 Tracks Globales" 
+              title="Duración de Top 10 Tracks Globales" 
             />
             <TrackList 
               tracks={globalTopTracks} 
