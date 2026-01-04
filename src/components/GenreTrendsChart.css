@@ -1,0 +1,43 @@
+.genre-trends-chart {
+  margin: 30px 0;
+}
+
+.chart-subtitle {
+  text-align: center;
+  color: #64748b;
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.chart-subtitle strong {
+  color: #1e293b;
+  font-weight: 600;
+}
+
+.custom-tooltip {
+  background: rgba(255, 255, 255, 0.98);
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 12px 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.tooltip-title {
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.tooltip-value {
+  font-size: 13px;
+  margin: 4px 0;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .genre-trends-chart .recharts-wrapper {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,52 @@
+.tracks-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.tracks-header h2 {
+  margin-bottom: 1rem;
+  font-size: 2.75rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #ffffff 0%, rgba(255, 255, 255, 0.9) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.tracks-header p {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.charts-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .tracks-header h2 {
+    font-size: 2rem;
+  }
+
+  .tracks-header p {
+    font-size: 1rem;
+  }
+
+  .charts-grid {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tracks-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .tracks-header p {
+    font-size: 0.9rem;
+  }
+}
