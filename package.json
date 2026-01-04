@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "server": "cd server && npm start",
     "server:dev": "cd server && npm run dev",
-    "prod": "npm run build && cd server && npm start"
+    "prod": "cd server && npm start"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.90.16",
