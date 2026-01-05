@@ -114,7 +114,7 @@ export const TrendsView = () => {
                   onChange={(e) => handleGenreSelect(e.target.value)}
                   className="genre-select"
                 >
-                  <option value="">-- Selecciona un género --</option>
+                  <option value="">Selecciona un género</option>
                   {topTags?.map((tag: Tag) => (
                     <option key={tag.name} value={tag.name}>
                       {tag.name}

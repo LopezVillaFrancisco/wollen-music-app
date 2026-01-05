@@ -39,6 +39,8 @@
   border-radius: 16px;
   border: 1px solid rgba(30, 58, 138, 0.1);
   transition: all 0.3s ease;
+  padding: 2rem;
+  width: 100%;
 }
 
 .chart-section:hover {
@@ -68,6 +70,7 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   border: 1px solid rgba(30, 58, 138, 0.1);
   transition: all 0.3s ease;
+  width: 100%;
 }
 
 .genre-list:hover {
@@ -182,7 +185,9 @@
     font-size: 2.25rem;
   }
 
-  .chart-section {
+  .chart-section,
+  .genre-list,
+  .trends-analysis-section-inline {
     width: 100%;
   }
 }
@@ -214,6 +219,7 @@
 
   .genre-item {
     padding: 1rem;
+    gap: 1rem;
   }
 
   .genre-rank {
@@ -224,6 +230,18 @@
 
   .genre-name {
     font-size: 0.95rem;
+  }
+
+  .trends-analysis-section-inline {
+    padding: 1.5rem;
+  }
+
+  .trends-search-controls {
+    gap: 1rem;
+  }
+
+  .chart-container {
+    overflow-x: auto;
   }
 }
 
@@ -240,8 +258,29 @@
     font-size: 1.5rem;
   }
 
+  .trends-header p {
+    font-size: 0.9rem;
+  }
+
   .trends-content {
-    gap: 1.5rem;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+  }
+
+  .chart-section {
+    padding: 1rem;
+  }
+
+  .chart-title {
+    font-size: 1rem;
+  }
+
+  .genre-list {
+    padding: 1rem;
+  }
+
+  .genre-list h3 {
+    font-size: 1rem;
   }
 
   .genre-item {
@@ -252,6 +291,36 @@
   .genre-badge {
     display: none;
   }
+
+  .trends-analysis-section-inline {
+    padding: 1rem;
+  }
+
+  .trends-analysis-header h2 {
+    font-size: 1.2rem;
+  }
+
+  .trends-analysis-header p {
+    font-size: 0.85rem;
+  }
+
+  .year-filters {
+    gap: 1rem;
+  }
+
+  .filter-group input {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .genre-select {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .results-header h3 {
+    font-size: 1.1rem;
+  }
 }
 
 .trends-analysis-section-inline {
@@ -259,8 +328,10 @@
   border-radius: 16px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   border: 1px solid rgba(30, 58, 138, 0.1);
-  padding: 2.5rem; 
-  width: 800px;
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 100%;
+  grid-column: 1 / -1;
 }
 
 .trends-analysis-section {
