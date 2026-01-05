@@ -11,7 +11,7 @@ import './TracksView.css';
 export const TracksView = () => {
   const { data: globalTopTracks, isLoading, error } = useQuery({
     queryKey: ['globalTopTracks'],
-    queryFn: () => lastfmService.getChartTopTracks(50),
+    queryFn: () => lastfmService.getChartTopTracks(10),
   });
 
   const analytics = globalTopTracks ? analyzeTrackDurations(globalTopTracks) : null;
